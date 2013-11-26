@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <meta charset="utf-8"/>
+   <title>About Me</title>
+ </head>
+ <body>
+   <h1>About Me</h1>
+  
+   <ul>
+     <li>Nickname: <span id="nickname"></span>
+     <li>Favorites:  <span id="favorites"></span>
+     <li>Hometown: <span id="hometown"></span>
+    </ul>
+  
+  <script type="text/javascript">
+    document.body.style.fontFamily = "Arial, sans-serif";
+    var spans = document.getElementsByTagName("span");
+    spans[0].innerText = "Batesy";
+    spans[1].innerText = "Sex, drugs, booze, donairs, pooping.";
+    spans[2].innerText = "Halifax";
+
+    var listItems = document.getElementsByTagName('li');
+    for (var i = 0; i < listItems.length; i++){
+      listItems[i].className = 'listitem';
+      listItems[i].style.color = "red";
+    }
+
+    document.write('<img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash3/558371_712098538384_345763838_n.jpg" />')
+
+  </script>
+  </body>
+ </html>
